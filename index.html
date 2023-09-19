@@ -10,8 +10,24 @@
 <h3>1. Tencent AI Lab, Bellevue, WA, USA</h3>
 <h3>2. The Ohio State University, Columbus, OH, USA</h3>
 <h3>*Equal contribution</h3>
-<p>This page provides sound demos for the titled paper.</p>
-<table style>
+<p>This page provides sound demos for the titled paper. The titled paper can be accessed through <a href="https://arxiv.org/pdf/2301.12363.pdf">https://arxiv.org/</a >. </p>
+
+<figure class="centered-figure">
+    <img src="./audiofiles/comparison.png" alt="comparison">
+    <figcaption>Fig. Spectrograms of: (a) target signal, (b) no AHS, (c) Kalman
+        filter, (d) DeepMFC, (e) HybridAHS, (f) Proposed NN, (g) Proposed
+        Hybrid (RM), and (h) Proposed Hybrid.
+    </figcaption>
+    <br>
+    <br>
+    <hr>
+</figure>
+
+
+<br>
+<p>Due to potential risks to the auditory system, we have omitted the 'no AHS' audio. Although we have included the outputs from the Kalman filter, listening to the entire audio is not recommended.</p>
+
+<table  cellpadding=“20”>
   <tr>
   <th colspan="3">Waveforms</th>
   </tr>
@@ -22,90 +38,90 @@
   
   </tr>
   <tr>
-    <td>Target signal</td>
+    <th>Target signal</th>
     <td><audio controls>
-        <source src="./AEC_Challenge/wav_files/synthetic_1_mix.wav" type="audio/wav">
+        <source src="./audiofiles/mild_howling_lspgain1.5/spk1___38-2___ID0422W0501_D0422_B_male_North___0.01682925615237149___1.9075460181261634_ref.wav" type="audio/wav">
 Your browser does not support the audio element.
 </audio></td>
     <td><audio controls>
-        <source src="./AEC_Challenge/wav_files/synthetic_1_s_est.wav" type="audio/wav">
-Your browser does not support the audio element.
-</audio></td>
-  </tr>
-  <tr>
-    <td>no AHS</td>
-    <td><audio controls>
-        <source src="./AEC_Challenge/wav_files/synthetic_1_mix.wav" type="audio/wav">
-Your browser does not support the audio element.
-</audio></td>
-    <td><audio controls>
-        <source src="./AEC_Challenge/wav_files/synthetic_1_s_est.wav" type="audio/wav">
+        <source src="./audiofiles/severe_howling_lspgain3/spk1___38-2___ID0422W0501_D0422_B_male_North___0.01682925615237149___1.9075460181261634_ref.wav" type="audio/wav">
 Your browser does not support the audio element.
 </audio></td>
   </tr>
   <tr>
-    <td>Kalman filter</td>
+    <th>no AHS</th>
     <td><audio controls>
-        <source src="./AEC_Challenge/wav_files/synthetic_1_mix.wav" type="audio/wav">
+        <source src="" type="audio/wav">
 Your browser does not support the audio element.
 </audio></td>
     <td><audio controls>
-        <source src="./AEC_Challenge/wav_files/synthetic_1_s_est.wav" type="audio/wav">
-Your browser does not support the audio element.
-</audio></td>
-  </tr>
-  <tr>
-    <td>Deep MFC</td>
-    <td><audio controls>
-        <source src="./AEC_Challenge/wav_files/synthetic_1_mix.wav" type="audio/wav">
-Your browser does not support the audio element.
-</audio></td>
-    <td><audio controls>
-        <source src="./AEC_Challenge/wav_files/synthetic_1_s_est.wav" type="audio/wav">
+        <source src="" type="audio/wav">
 Your browser does not support the audio element.
 </audio></td>
   </tr>
   <tr>
-    <td>Hybrid AHS</td>
+    <th>Kalman filter</th>
     <td><audio controls>
-        <source src="./AEC_Challenge/wav_files/synthetic_1_mix.wav" type="audio/wav">
+        <source src="./audiofiles/mild_howling_lspgain1.5/spk1___38-2___ID0422W0501_D0422_B_male_North___0.01682925615237149___1.9075460181261634_kalman.wav" type="audio/wav">
 Your browser does not support the audio element.
 </audio></td>
     <td><audio controls>
-        <source src="./AEC_Challenge/wav_files/synthetic_1_s_est.wav" type="audio/wav">
-Your browser does not support the audio element.
-</audio></td>
-  </tr>
-  <tr>
-    <td>Proposed NN</td>
-    <td><audio controls>
-        <source src="./AEC_Challenge/wav_files/synthetic_1_mix.wav" type="audio/wav">
-Your browser does not support the audio element.
-</audio></td>
-    <td><audio controls>
-        <source src="./AEC_Challenge/wav_files/synthetic_1_s_est.wav" type="audio/wav">
+        <source src="./audiofiles/severe_howling_lspgain3/spk1___38-2___ID0422W0501_D0422_B_male_North___0.01682925615237149___1.9075460181261634_kalman.wav" type="audio/wav">
 Your browser does not support the audio element.
 </audio></td>
   </tr>
   <tr>
-    <td>Proposed Hybrid (RM)</td>
+    <th>Deep MFC</th>
     <td><audio controls>
-        <source src="./AEC_Challenge/wav_files/synthetic_1_mix.wav" type="audio/wav">
+        <source src="./audiofiles/mild_howling_lspgain1.5/spk1___38-2___ID0422W0501_D0422_B_male_North___0.01682925615237149___1.9075460181261634_deepmfc.wav" type="audio/wav">
 Your browser does not support the audio element.
 </audio></td>
     <td><audio controls>
-        <source src="./AEC_Challenge/wav_files/synthetic_1_s_est.wav" type="audio/wav">
+        <source src="./audiofiles/severe_howling_lspgain3/spk1___38-2___ID0422W0501_D0422_B_male_North___0.01682925615237149___1.9075460181261634_deepMFC.wav" type="audio/wav">
 Your browser does not support the audio element.
 </audio></td>
   </tr>
   <tr>
-    <td>Proposed Hybrid</td>
+    <th>Hybrid AHS</th>
     <td><audio controls>
-        <source src="./AEC_Challenge/wav_files/synthetic_1_mix.wav" type="audio/wav">
+        <source src="./audiofiles/mild_howling_lspgain1.5/spk1___38-2___ID0422W0501_D0422_B_male_North___0.01682925615237149___1.9075460181261634_hybridAHS.wav" type="audio/wav">
 Your browser does not support the audio element.
 </audio></td>
     <td><audio controls>
-        <source src="./AEC_Challenge/wav_files/synthetic_1_s_est.wav" type="audio/wav">
+        <source src="./audiofiles/severe_howling_lspgain3/spk1___38-2___ID0422W0501_D0422_B_male_North___0.01682925615237149___1.9075460181261634_hybridAHS.wav" type="audio/wav">
+Your browser does not support the audio element.
+</audio></td>
+  </tr>
+  <tr>
+    <th>Proposed NN</th>
+    <td><audio controls>
+        <source src="./audiofiles/mild_howling_lspgain1.5/spk1___38-2___ID0422W0501_D0422_B_male_North___0.01682925615237149___1.9075460181261634_onlineNN_RM.wav" type="audio/wav">
+Your browser does not support the audio element.
+</audio></td>
+    <td><audio controls>
+        <source src="./audiofiles/severe_howling_lspgain3/spk1___38-2___ID0422W0501_D0422_B_male_North___0.01682925615237149___1.9075460181261634_nnRM.wav" type="audio/wav">
+Your browser does not support the audio element.
+</audio></td>
+  </tr>
+  <tr>
+    <th style="padding: 12px;">Proposed Hybrid (RM)</th>
+    <td><audio controls>
+        <source src="./audiofiles/mild_howling_lspgain1.5/spk1___38-2___ID0422W0501_D0422_B_male_North___0.01682925615237149___1.9075460181261634_onlineHybrid_RM.wav" type="audio/wav">
+Your browser does not support the audio element.
+</audio></td>
+    <td><audio controls>
+        <source src="./audiofiles/severe_howling_lspgain3/spk1___38-2___ID0422W0501_D0422_B_male_North___0.01682925615237149___1.9075460181261634_onlinehybridRM.wav" type="audio/wav">
+Your browser does not support the audio element.
+</audio></td>
+  </tr>
+  <tr>
+    <th>Proposed Hybrid</th>
+    <td><audio controls>
+        <source src="./audiofiles/mild_howling_lspgain1.5/spk1___38-2___ID0422W0501_D0422_B_male_North___0.01682925615237149___1.9075460181261634_onlineHybrid_cRM.wav" type="audio/wav">
+Your browser does not support the audio element.
+</audio></td>
+    <td><audio controls>
+        <source src="./audiofiles/severe_howling_lspgain3/spk1___38-2___ID0422W0501_D0422_B_male_North___0.01682925615237149___1.9075460181261634_onlineHybridcRM.wav" type="audio/wav">
 Your browser does not support the audio element.
 </audio></td>
   </tr>
