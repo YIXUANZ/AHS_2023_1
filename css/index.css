@@ -1,0 +1,41 @@
+* {
+    font-family: Helvetica, Arial, sans-serif;
+  }
+  
+  
+  h1 {
+    color: Red;
+    text-align: center;
+  }
+  
+  h2 {
+    color: Green;
+    text-align: center;
+  }
+  
+  p{
+    text-align: center;
+    align: center;
+  }
+  li {
+    font-size: 18px;
+  }
+  
+  
+  a {
+    text-decoration: none;
+  }
+  
+  table, th, td {
+    border: 1px solid black;
+    align: center;
+    text-align: center;
+    margin: 0 auto;
+  }
+  ul{
+    list-style-type: None;
+  }
+  audio {
+    width: 7.0cm;
+    height: 1.2cm;
+  }

@@ -1,20 +1,233 @@
 <!DOCTYPE html>
-<html lang="en-US"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
-<title>Advancing Acoustic Howling Suppression Through Recursive Training of Neural Networks</title>
-<meta name="generator" content="Jekyll v3.9.0">
-<meta property="og:locale" content="en_US">
-<link rel="canonical" href="https://yixuanz.github.io/AHS_2023_1/">
-<meta property="og:url" content="https://yixuanz.github.io/AHS_2023_1/">
-<meta name="twitter:card" content="summary">
-
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#157878">
-<link rel="stylesheet" href="./assets/css/style.scss">
+<html>
+<head>
+  <link href="./css/index.css" type="text/css" rel="stylesheet">
+  <title>AEC_Challenge</title>
 </head>
-<body data-new-gr-c-s-check-loaded="14.1001.0" data-gr-ext-installed="">
+<body>
+<h1>Advancing Acoustic Howling Suppression Through Recursive Training of Neural Networks</h1>
+<p>This page provides sound demos for the titled paper when tested with the AEC-Challenge datasets</p>
+<table style>
+  <tr>
+  <th colspan="4">Synthetic signals</th>
+  </tr>
+  <tr>
+    <th>Id</th>
+    <th>Microphone signal </th>
+    <th>BLSTM</th> 
+    <th>BLSTM-NSD</th>
+  
+  </tr>
+  <tr>
+    <td>1</td>
+    <td><audio controls>
+        <source src="./AEC_Challenge/wav_files/synthetic_1_mix.wav" type="audio/wav">
+Your browser does not support the audio element.
+</audio></td>
+    <td><audio controls>
+        <source src="./AEC_Challenge/wav_files/synthetic_1_s_est.wav" type="audio/wav">
+Your browser does not support the audio element.
+</audio></td>
+    <td><audio controls>
+        <source src="./AEC_Challenge/wav_files/synthetic_1_s_est_nsd.wav" type="audio/wav">
+Your browser does not support the audio element.
+</audio></td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td><audio controls>
+        <source src="./AEC_Challenge/wav_files/synthetic_2_mix.wav" type="audio/wav">
+Your browser does not support the audio element.
+</audio></td>
+    <td><audio controls>
+        <source src="./AEC_Challenge/wav_files/synthetic_2_s_est.wav" type="audio/wav">
+Your browser does not support the audio element.
+</audio></td>
+    <td><audio controls>
+        <source src="./AEC_Challenge/wav_files/synthetic_2_s_est_nsd.wav" type="audio/wav">
+Your browser does not support the audio element.
+</audio></td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td><audio controls>
+        <source src="./AEC_Challenge/wav_files/synthetic_3_mix.wav" type="audio/wav">
+Your browser does not support the audio element.
+</audio></td>
+    <td><audio controls>
+        <source src="./AEC_Challenge/wav_files/synthetic_3_s_est.wav" type="audio/wav">
+Your browser does not support the audio element.
+</audio></td>
+    <td><audio controls>
+        <source src="./AEC_Challenge/wav_files/synthetic_3_s_est_nsd.wav" type="audio/wav">
+Your browser does not support the audio element.
+</audio></td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td><audio controls>
+        <source src="./AEC_Challenge/wav_files/synthetic_4_mix.wav" type="audio/wav">
+Your browser does not support the audio element.
+</audio></td>
+    <td><audio controls>
+        <source src="./AEC_Challenge/wav_files/synthetic_4_s_est.wav" type="audio/wav">
+Your browser does not support the audio element.
+</audio></td>
+    <td><audio controls>
+        <source src="./AEC_Challenge/wav_files/synthetic_4_s_est_nsd.wav" type="audio/wav">
+Your browser does not support the audio element.
+</audio></td>
+  </tr>
 
-<header class="page-header" role="banner">
-    <h1 class="project-name">Advancing Acoustic Howling Suppression Through Recursive Training of Neural Networks</h1>
-    <h2 class="project-tagline">Demo page</h2>
-    </header>
+</table>
+<br><br><br>
+<table style>
+  <tr>
+  <th colspan="4">Real-recorded noisy test signals</th>
+  </tr>
+  <tr>
+    <th>Id</th>
+    <th>Microphone signal </th>
+    <th>BLSTM</th> 
+    <th>BLSTM-NSD</th>
+  
+  </tr>
+  <tr>
+    <td>1</td>
+    <td><audio controls>
+        <source src="./AEC_Challenge/wav_files/noisy_1_mic.wav" type="audio/wav">
+Your browser does not support the audio element.
+</audio></td>
+    <td><audio controls>
+        <source src="./AEC_Challenge/wav_files/noisy_1.wav" type="audio/wav">
+Your browser does not support the audio element.
+</audio></td>
+    <td><audio controls>
+        <source src="./AEC_Challenge/wav_files/noisy_1_nsd.wav" type="audio/wav">
+Your browser does not support the audio element.
+</audio></td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td><audio controls>
+        <source src="./AEC_Challenge/wav_files/noisy_2_mic.wav" type="audio/wav">
+Your browser does not support the audio element.
+</audio></td>
+    <td><audio controls>
+        <source src="./AEC_Challenge/wav_files/noisy_2.wav" type="audio/wav">
+Your browser does not support the audio element.
+</audio></td>
+    <td><audio controls>
+        <source src="./AEC_Challenge/wav_files/noisy_2_nsd.wav" type="audio/wav">
+Your browser does not support the audio element.
+</audio></td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td><audio controls>
+        <source src="./AEC_Challenge/wav_files/noisy_3_mic.wav" type="audio/wav">
+Your browser does not support the audio element.
+</audio></td>
+    <td><audio controls>
+        <source src="./AEC_Challenge/wav_files/noisy_3.wav" type="audio/wav">
+Your browser does not support the audio element.
+</audio></td>
+    <td><audio controls>
+        <source src="./AEC_Challenge/wav_files/noisy_3_nsd.wav" type="audio/wav">
+Your browser does not support the audio element.
+</audio></td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td><audio controls>
+        <source src="./AEC_Challenge/wav_files/noisy_4_mic.wav" type="audio/wav">
+Your browser does not support the audio element.
+</audio></td>
+    <td><audio controls>
+        <source src="./AEC_Challenge/wav_files/noisy_4.wav" type="audio/wav">
+Your browser does not support the audio element.
+</audio></td>
+    <td><audio controls>
+        <source src="./AEC_Challenge/wav_files/noisy_4_nsd.wav" type="audio/wav">
+Your browser does not support the audio element.
+</audio></td>
+  </tr>
+
+</table>
+<br><br><br>
+<table style>
+  <tr>
+  <th colspan="4">Real-recorded clean test signals</th>
+  </tr>
+  <tr>
+    <th>Id</th>
+    <th>Microphone signal </th>
+    <th>BLSTM</th> 
+    <th>BLSTM-NSD</th>
+  
+  </tr>
+  <tr>
+    <td>1</td>
+    <td><audio controls>
+        <source src="./AEC_Challenge/wav_files/clean_1_mic.wav" type="audio/wav">
+Your browser does not support the audio element.
+</audio></td>
+    <td><audio controls>
+        <source src="./AEC_Challenge/wav_files/clean_1.wav" type="audio/wav">
+Your browser does not support the audio element.
+</audio></td>
+    <td><audio controls>
+        <source src="./AEC_Challenge/wav_files/clean_1_nsd.wav" type="audio/wav">
+Your browser does not support the audio element.
+</audio></td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td><audio controls>
+        <source src="./AEC_Challenge/wav_files/clean_2_mic.wav" type="audio/wav">
+Your browser does not support the audio element.
+</audio></td>
+    <td><audio controls>
+        <source src="./AEC_Challenge/wav_files/clean_2.wav" type="audio/wav">
+Your browser does not support the audio element.
+</audio></td>
+    <td><audio controls>
+        <source src="./AEC_Challenge/wav_files/clean_2_nsd.wav" type="audio/wav">
+Your browser does not support the audio element.
+</audio></td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td><audio controls>
+        <source src="./AEC_Challenge/wav_files/clean_3_mic.wav" type="audio/wav">
+Your browser does not support the audio element.
+</audio></td>
+    <td><audio controls>
+        <source src="./AEC_Challenge/wav_files/clean_3.wav" type="audio/wav">
+Your browser does not support the audio element.
+</audio></td>
+    <td><audio controls>
+        <source src="./AEC_Challenge/wav_files/clean_3_nsd.wav" type="audio/wav">
+Your browser does not support the audio element.
+</audio></td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td><audio controls>
+        <source src="./AEC_Challenge/wav_files/clean_4_mic.wav" type="audio/wav">
+Your browser does not support the audio element.
+</audio></td>
+    <td><audio controls>
+        <source src="./AEC_Challenge/wav_files/clean_4.wav" type="audio/wav">
+Your browser does not support the audio element.
+</audio></td>
+    <td><audio controls>
+        <source src="./AEC_Challenge/wav_files/clean_4_nsd.wav" type="audio/wav">
+Your browser does not support the audio element.
+</audio></td>
+  </tr>
+
+</table>
+<br><br><br>
+</body>
+</html>
